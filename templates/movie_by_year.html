@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8", name="color-scheme", content="dark light">
+    <title>Film from {{ year_from }} to {{ year_to }}</title>
+</head>
+<body>
+    <div style="color: #007d00">
+        <h1>Film from {{ year_from }} to {{ year_to }}</h1>
+        {% for p in page %}
+            <a href="https://ru.wikipedia.org/wiki/{{ p.title }}", style="color: #007d00"><h2>{{ p.title }}</h2></a>
+            <h3>
+                <ul>
+                    <li>Год релиза: {{ p.release_year }}</li>
+                </ul>
+            </h3>
+        {% endfor %}
+    </div>
+</body>
+</html>

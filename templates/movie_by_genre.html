@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8", name="color-scheme", content="dark light">
+    <title>Film by genre: {{ genre }}</title>
+</head>
+<body>
+    {% for p in page %}
+        <div>
+            <a href="https://ru.wikipedia.org/wiki/{{ p.title }}", style="color: #007d00"><h1>{{ p.title }}</h1></a>
+            <h3>
+                <ul style="color: #007d00">
+                    <li>Описание: {{ p.description }}</li>
+                </ul>
+            </h3>
+        </div>
+    {% endfor %}
+</body>
+</html>

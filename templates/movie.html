@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8", name="color-scheme", content="dark light">
+    <title>Film {{ page.title }}</title>
+</head>
+<body>
+    <div>
+        <a href="https://ru.wikipedia.org/wiki/{{ page.title }}", style="color: #007d00"><h1>{{ page.title }}</h1></a>
+        <h3>
+            <ul style="color: #007d00">
+                <li>Страна производства: {{ page.country }}</li>
+                <li>Год релиза: {{ page.release_year }}</li>
+                <li>Места проката: {{ page.genre }}</li>
+                <li>Описание: {{ page.description }}</li>
+            </ul>
+        </h3>
+    </div>
+</body>
+</html>
